@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tasks - Assignment 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Assignment - Pinaki Priya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1>JavaScript Tasks - Assignment 2</h1>
+        Assignment 2 Submission - Pinaki Priya (22BHI10001)
     </header>
-    <main>
-        <section>
-            <h2>Task List</h2>
-            <ul>
-                <li><a href="JStask1.html">JavaScript Task 1</a></li>
-                <li><a href="JStask2.html">JavaScript Task 2</a></li>
-                <li><a href="JStask3.html">JavaScript Task 3</a></li>
-                <li><a href="JStask4.html">JavaScript Task 4</a></li>
-                <li><a href="JStask5.html">JavaScript Task 5</a></li>
-                <li><a href="JStask6.html">JavaScript Task 6</a></li>
-                <li><a href="JStask7.html">JavaScript Task 7</a></li>
-                <li><a href="JStask8.html">JavaScript Task 8</a></li>
-            </ul>
-        </section>
-    </main>
+
+    <div class="container">
+        <h2>Select a Task to View</h2>
+
+        <!-- JavaScript Tasks -->
+        <h3>JavaScript Tasks</h3>
+        <button onclick="openTask('JStask1.html')">JavaScript Task 1</button>
+        <button onclick="openTask('JStask2.html')">JavaScript Task 2</button>
+        <button onclick="openTask('JStask3.html')">JavaScript Task 3</button>
+        <button onclick="openTask('JStask4.html')">JavaScript Task 4</button>
+        <button onclick="openTask('JStask5.html')">JavaScript Task 5</button>
+        <button onclick="openTask('JStask6.html')">JavaScript Task 6</button>
+        <button onclick="openTask('JStask7.html')">JavaScript Task 7</button>
+        <button onclick="openTask('JStask8.html')">JavaScript Task 8</button>
+
+
+    </div>
+
+    <script>
+        function openTask(taskUrl) {
+            window.open(taskUrl, '_blank');
+        }
+    </script>
+
 </body>
+
 </html>
